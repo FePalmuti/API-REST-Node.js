@@ -3,18 +3,44 @@
     <head>
         <meta charset="utf-8">
         <title>Library</title>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="/css/styles.css">
     </head>
-    <body>
-        <div>
-            <table id="data"></table>
-        </div>
-        <div>
-            <input type="text" id="id" placeholder="ID">
-            <input type="text" id="book-name" placeholder="Book name">
-            <input type="text" id="author" placeholder="Author">
-            <button type="button" id="add">Add</button>
+    <body style="background-color:#add8e6; padding-top:100px">
+        <div class="container-fluid">
+            <!--Master-->
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <input class="form-control" type="text" id="searched-book-name" placeholder="Book name">
+                    <button class="btn btn-outline-secondary" type="button" id="find">FIND</button>
+                    <button class="btn btn-outline-secondary" type="button" id="show-all">SHOW ALL</button>
+                    <br>
+                    <br>
+                    <table id="data"></table>
+                    <br>
+                    <input class="form-control" type="text" id="book-name" placeholder="Book name">
+                    <input class="form-control" type="text" id="author" placeholder="Author">
+                    <button class="btn btn-outline-secondary" type="button" id="add">ADD</button>
+                </div>
+                <div class="col-sm-2"></div>
+            </div><!--End-Master-->
         </div>
     </body>
-    <script type="text/javascript" src="ClientSide.js"></script>
+    <script type="text/javascript" src="js/ClientSide.js"></script>
 </html>
+
+
+<!--
+    -->
