@@ -9,5 +9,3 @@ CREATE TABLE books (
   author varchar(200) NOT NULL,
   PRIMARY KEY (id)
 );
-
-select * from books;

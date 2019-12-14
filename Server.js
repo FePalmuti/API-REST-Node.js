@@ -16,7 +16,6 @@ const conec = mysql.createConnection({
 
 conec.connect(error => {
     if(error) {
-        res.end(error.toString());
         throw error;
     }
 });
@@ -25,13 +24,13 @@ conec.connect(error => {
 app.use(express.static("public"));
 
 app.get('/', (req, res) => {
-	res.sendFile('/var/www/TP3/index.html');
+	res.sendFile('/var/www/API-REST-Node.js/index.html');
 });
 
 app.get('/books', (req, res) => {
     conec.query("SELECT * FROM books", (error, result, field) => {
         if(error) {
-            res.status(400).send();
+            res.status(400).send(error);
             console.log("BAD REQUEST");
         }
         else {
